@@ -29,7 +29,6 @@ set numberwidth=4         " make the number gutter 6 characters wide
 "set ignorecase            " Make searches case-insensitive.
 set ruler                 " Always show info along bottom.
 
-
 " Avoid unnecessary delay when pressing ESC
 set ttimeout
 set ttimeoutlen=50
