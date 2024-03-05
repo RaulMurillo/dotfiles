@@ -8,9 +8,21 @@ case $- in
       *) return;;
 esac
 
-# don't put duplicate lines or lines starting with space in the history.
+# Don't put duplicate lines or lines starting with space in the history.
+# Improve history output.
 # See bash(1) for more options
-HISTCONTROL=ignoreboth
+betterHistory()
+{
+	local blue="[0;34m"
+	local nocolor="[0m"
+	export HISTTIMEFORMAT=`echo -e ${blue}[%F %T] $nocolor `
+	export HISTSIZE=10000
+	export HISTFILESIZE=50000
+	export HISTCONTROL=ignoreboth
+	shopt -s cmdhist
+	shopt -s lithist
+}
+betterHistory
 
 # append to the history file, don't overwrite it
 shopt -s histappend
@@ -101,3 +113,8 @@ if [ -f ~/.bash_local ]; then
     . ~/.bash_local
 fi
 
+##-----------------------------------------------------
+# synth-shell-prompt.sh - from https://github.com/andresgongora/synth-shell
+if [ -f ~/.config/synth-shell/synth-shell-prompt.sh ]; then
+	. ~/.config/synth-shell/synth-shell-prompt.sh
+fi

@@ -10,9 +10,11 @@ if [ -x /usr/bin/dircolors ]; then
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
+    alias tree='tree --dirsfirst -C'
+    alias dmesg='dmesg --color=auto --reltime --human --nopager --decode'
 fi
 
-alias ll='ls -ahlF'
+alias ll='ls -ahlF --time-style=long-iso'
 alias la='ls -A'
 alias l='ls -CF'
 
@@ -36,7 +38,10 @@ alias gb="git branch"
 alias mv="mv -i"           # -i prompts before overwrite
 alias mkdir="mkdir -p"     # -p make parent dirs as needed
 alias df="df -h"           # -h prints human readable format
+alias free='free -mh'     # -m prints mebibytes in human readable format
 
 # Misc aliases
 alias v="vim"
 alias python="python3"
+alias weather="~/scripts/weather.sh"
+alias tiempo="~/scripts/weather.sh"
