@@ -1,14 +1,14 @@
 {
+    "window.zoomLevel": 1,
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.sideBar.location": "right",
     "editor.minimap.enabled": false,
     "editor.formatOnSave": true,
-    "breadcrumbs.enabled": false,
-    "jupyter.askForKernelRestart": false,
-    "notebook.formatOnSave.enabled": true,
-    "git.confirmSync": false,
-    "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDelete": false,
+    "update.showReleaseNotes": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "breadcrumbs.enabled": false,
     "editor.rulers": [
         80,
         120
@@ -16,15 +16,24 @@
     "editor.wordWrapColumn": 80,
     "editor.wordWrap": "bounded",
     "terminal.integrated.enableMultiLinePasteWarning": "always",
+    "git.confirmSync": false,
+    "git.openRepositoryInParentFolders": "always",
     "[python]": {
         "editor.formatOnType": true
     },
+    "jupyter.askForKernelRestart": false,
+    "notebook.formatOnSave.enabled": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
     "grammarly.files.include": [
-        "**/readme.md",
-        "**/README.md",
+        "**/*.md",
         "**/*.txt",
         "**/*.tex"
     ],
+    "grammarly.config.documentDomain": "academic",
+    "grammarly.config.suggestions.PassiveVoice": true,
     "latex-workshop.latex.tools": [
         {
             "name": "pdflatex",
@@ -85,13 +94,13 @@
             "name": "xelatex 🔃",
             "tools": [
                 "xelatex"
-            ],
+            ]
         },
         {
             "name": "latexmk 🔃",
             "tools": [
                 "latexmk"
-            ],
+            ]
         },
         {
             "name": "pdflatex➞bibtex➞pdflatex.2x 🔃",
@@ -110,17 +119,10 @@
                 "xelatex",
                 "xelatex"
             ]
-        },
+        }
     ],
     "latex-workshop.bibtex-format.sortby": [
         "year",
         "author"
     ],
-    "git.openRepositoryInParentFolders": "always",
-    "window.zoomLevel": 1,
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "update.showReleaseNotes": false,
 }
