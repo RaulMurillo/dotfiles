@@ -34,7 +34,7 @@
         "**/*.tex"
     ],
     "grammarly.config.documentDomain": "academic",
-    "grammarly.config.suggestions.PassiveVoice": true,
+    "grammarly.config.suggestionCategories.passiveVoice": "on",
     "latex-workshop.latex.tools": [
         {
             "name": "pdflatex",
