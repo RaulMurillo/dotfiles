@@ -1,3 +1,8 @@
+catppuccin.catppuccin-vsc
+github.copilot
+github.copilot-chat
+grapecity.gc-excelviewer
+james-yu.latex-workshop
 ms-ceintl.vscode-language-pack-es
 ms-python.debugpy
 ms-python.isort
@@ -16,11 +21,9 @@ ms-vscode.cpptools-extension-pack
 ms-vscode.cpptools-themes
 ms-vscode.remote-explorer
 mshr-h.veriloghdl
-theonekevin.icarusext
-twxs.cmake
-pnp.polacode
 oderwat.indent-rainbow
 pkief.material-icon-theme
-catppuccin.catppuccin-vsc
-james-yu.latex-workshop
+pnp.polacode
+theonekevin.icarusext
+twxs.cmake
 znck.grammarly
