@@ -4,6 +4,7 @@
     "window.commandCenter": false,
     "workbench.layoutControl.enabled": false,
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "material-product-icons",
     "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.sideBar.location": "right",
     "editor.minimap.enabled": false,
@@ -31,13 +32,6 @@
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "grammarly.files.include": [
-        "**/*.md",
-        "**/*.txt",
-        "**/*.tex"
-    ],
-    "grammarly.config.documentDomain": "academic",
-    "grammarly.config.suggestionCategories.passiveVoice": "on",
     "latex-workshop.latex.tools": [
         {
             "name": "pdflatex",
